@@ -32,8 +32,7 @@ window.getDeck = function() {
   $(function() {
     $(".deal").on("click", function(event) {
   event.preventDefault()
-
-  $("#c1").attr("scr", "http://golearntocode.com/images/cards/" + getRandomIndex(myArray.shuffle(cards.push(rank + "_of_" + suit))) + ".png")
-
+  myArray.shuffle()
+    $("#c1").attr("scr", "http://golearntocode.com/images/cards/" + getDeck(cards.push(2,'ace' + "_of_" + 'clubs','spades')) + ".png")
   })
 })
