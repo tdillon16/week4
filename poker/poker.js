@@ -32,7 +32,7 @@ window.getDeck = function() {
   $(function() {
     $(".deal").on("click", function(event) {
   event.preventDefault()
-  myArray.shuffle()
-    $("#c1").attr("scr", "http://golearntocode.com/images/cards/" + getDeck(cards.push(2,'ace' + "_of_" + 'clubs','spades')) + ".png")
+    $myArray.shuffle()
+    $("#c1").attr("scr", "http://golearntocode.com/images/cards/" + myArray.shuffle((cards.push(2,'ace' + "_of_" + 'clubs','spades'))) + ".png")
   })
 })
