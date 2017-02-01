@@ -32,7 +32,14 @@ window.getDeck = function() {
   $(function() {
     $(".deal").on("click", function(event) {
   event.preventDefault()
-    $myArray.shuffle()
-    $("#c1").attr("scr", "http://golearntocode.com/images/cards/" + myArray.shuffle((cards.push(2,'ace' + "_of_" + 'clubs','spades'))) + ".png")
+
+    var deck = getDeck();
+    var shuffledDeck = deck.shuffle();
+
+    $("#c1").attr("scr", "http://golearntocode.com/images/cards/" + shuffledDeck[0] + ".png")
+    $("#c2").attr("scr", "http://golearntocode.com/images/cards/" + shuffledDeck[1] + ".png")
+    $("#c3").attr("scr", "http://golearntocode.com/images/cards/" + shuffledDeck[2] + ".png")
+    $("#c4").attr("scr", "http://golearntocode.com/images/cards/" + shuffledDeck[3] + ".png")
+    $("#c5").attr("scr", "http://golearntocode.com/images/cards/" + shuffledDeck[4] + ".png")
   })
 })
