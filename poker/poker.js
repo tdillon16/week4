@@ -36,10 +36,10 @@ window.getDeck = function() {
     var deck = getDeck();
     var shuffledDeck = deck.shuffle();
 
-    $("#c1").attr("scr", "http://golearntocode.com/images/cards/" + shuffledDeck[0] + ".png")
-    $("#c2").attr("scr", "http://golearntocode.com/images/cards/" + shuffledDeck[1] + ".png")
-    $("#c3").attr("scr", "http://golearntocode.com/images/cards/" + shuffledDeck[2] + ".png")
-    $("#c4").attr("scr", "http://golearntocode.com/images/cards/" + shuffledDeck[3] + ".png")
-    $("#c5").attr("scr", "http://golearntocode.com/images/cards/" + shuffledDeck[4] + ".png")
+    $("#c1").attr("src", "http://golearntocode.com/images/cards/" + shuffledDeck[0] + ".png")
+    $("#c2").attr("src", "http://golearntocode.com/images/cards/" + shuffledDeck[1] + ".png")
+    $("#c3").attr("src", "http://golearntocode.com/images/cards/" + shuffledDeck[2] + ".png")
+    $("#c4").attr("src", "http://golearntocode.com/images/cards/" + shuffledDeck[3] + ".png")
+    $("#c5").attr("src", "http://golearntocode.com/images/cards/" + shuffledDeck[4] + ".png")
   })
 })
